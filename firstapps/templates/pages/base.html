@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load staticfiles %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% block title %}{% endblock %}</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{% static 'bower_components/Ionicons/css/ionicons.min.css' %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'dist/css/AdminLTE.min.css' %}">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="{% static 'dist/css/skins/_all-skins.min.css' %}">
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+	<!-- FastClick -->
+	<script src="{% static 'bower_components/fastclick/lib/fastclick.js' %}"></script>
+	<!-- AdminLTE App -->
+	<script src="{% static 'dist/js/adminlte.min.js' %}"></script>
+	<!-- AdminLTE for demo purposes -->
+	<script src="{% static 'dist/js/demo.js' %}"></script>
+	<!-- FLOT CHARTS -->
+	<script src="{% static 'bower_components/Flot/jquery.flot.js' %}"></script>
+	<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+	<script src="{% static 'bower_components/Flot/jquery.flot.resize.js' %}"></script>
+	<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+	<script src="{% static 'bower_components/Flot/jquery.flot.pie.js' %}"></script>
+	<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+	<script src="{% static 'bower_components/Flot/jquery.flot.categories.js' %}"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini"style="min-height: 95%",>
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="/" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>D</b>HT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Home</b> Broker</span>
+    </a>
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a> 
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Menu</li>
+        <li>
+          <a href="/">
+            <i class="fa fa-dashboard"></i><span> Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="/saveDB">
+            <i class="fa fa-th"></i><span> Data-Updating</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Charts</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="/LTE"><i class="fa fa-circle-o"></i>Humidity-Temperature</a></li>   
+          </ul>
+        </li>
+        <li>
+          <a href="/admin">
+            <i class="fa fa-laptop"></i>
+            <span>Login</span>
+          </a>
+        </li>  
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <center><h1>Home MQTT Broker</h1></center>  
+    </section>
+    <!noi dung page >
+  </div>
+</div>
+  <footer class="main-footer">
+    <div class="container-fluid">
+      <a href="http://fet-hue.edu.vn/">Khoa Dien Tu-Truyen Thong</a>|<a href="http://husc.edu.vn/">Dai Hoc Khoa Hoc</a>|<a href="">DHU</a>  
+      <!in " " will be address of pages Khoa Dien Tu-Tuyen Thong >  
+    </div>
+  </footer>  
+	<script>
+	</script>	
+</body>
+</html>
+	

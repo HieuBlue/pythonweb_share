@@ -1,0 +1,8 @@
+{% extends "saveDB/base2.html" %}
+{% block title %}Data-updating{% endblock %}
+{% block content %}
+	<h2><small>Temperature and Humidity is updating:</small></h2>
+	{% for post in Posts %}
+	<h4><small>** {{post.date}} <a href="/saveDB/{{post.id}}"> - {{post.title}} - {{post.body}}</a></small></h4> <!{{post.date|date:"d-m-Y"}}>
+	{% endfor %}
+{% endblock %}
