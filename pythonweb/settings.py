@@ -32,13 +32,12 @@ SECRET_KEY = config('SECRET_KEY')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 DEBUG = config('DEBUG', cast=bool)
-
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'https://project-science-iot.herokuapp.com/',
-]
-#ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+#ALLOWED_HOSTS = [
+#    '127.0.0.1',
+#    'localhost',
+#    'https://project-science-iot.herokuapp.com/',
+#]
+ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOST', cast=Csv())
 
 # Application definition
 
