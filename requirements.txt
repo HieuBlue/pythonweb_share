@@ -18,6 +18,7 @@ Jinja2==2.10
 jmespath==0.9.3
 MarkupSafe==1.0
 pathlib==1.0.1
+pipenv==2018.6.25
 pipreqs==0.4.9
 pkginfo==1.4.2
 psycopg2==2.7.5

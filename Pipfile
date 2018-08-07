@@ -1,26 +1,54 @@
 [[source]]
-
 url = "https://pypi.org/simple"
-
 verify_ssl = true
 name = "pypi"
 
 [packages]
-gunicorn = "*"
-requests = "*"
+awscli = "==1.15.15"
+botocore = "==1.10.15"
+certifi = "==2018.4.16"
+chardet = "==3.0.4"
+click = "==6.7"
+colorama = "==0.3.7"
+dj-database-url = "==0.5.0"
+django-heroku = "==0.3.1"
+docopt = "==0.6.2"
+docutils = "==0.14"
+gunicorn = "==19.9.0"
+idna = "==2.7"
+itsdangerous = "==0.24"
+jmespath = "==0.9.3"
+pathlib = "==1.0.1"
+pipenv = "==2018.6.25"
+pipreqs = "==0.4.9"
+pkginfo = "==1.4.2"
+"psycopg2" = "==2.7.5"
+"psycopg2-binary" = "==2.7.5"
+"pyasn1" = "==0.4.2"
+python-dateutil = "==2.7.2"
+python-decouple = "==3.1"
+pytz = "==2018.3"
+requests = "==2.19.1"
+requests-toolbelt = "==0.8.0"
+rsa = "==3.4.2"
+"s3transfer" = "==0.1.13"
+six = "==1.11.0"
+tqdm = "==4.24.0"
+twine = "==1.11.0"
+"urllib3" = "==1.23"
+virtualenv = "==16.0.0"
+virtualenv-clone = "==0.3.0"
+whitenoise = "==3.3.1"
+yarg = "==0.1.9"
+Django = "==2.0.7"
+ez_setup = "==0.9"
+"Jinja2" = "==2.10"
+MarkupSafe = "==1.0"
+PyYAML = "==3.12"
+Unipath = "==1.1"
+Werkzeug = "==0.14.1"
 
 [dev-packages]
 
-
-[packages]
-
-django = "2.0.7"
-
-gunicorn = "19.9.0"
-
-django-heroku = "0.3.1"
-
-
 [requires]
-
 python_version = "3.6"
