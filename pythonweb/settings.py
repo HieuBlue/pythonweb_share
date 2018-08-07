@@ -36,7 +36,7 @@ DEBUG = config('DEBUG', cast=bool)
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'project-science-iot.herokuapp.com/',
+    'https://project-science-iot.herokuapp.com/',
 ]
 #ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
@@ -103,6 +103,7 @@ import dj_database_url
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'URL':config('DB_URL'),
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
