@@ -37,7 +37,7 @@ DEBUG = config('DEBUG', cast=bool)
 #    'localhost',
 #    'https://project-science-iot.herokuapp.com/',
 #]
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOST', cast=Csv())
+ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
 
 # Application definition
 
