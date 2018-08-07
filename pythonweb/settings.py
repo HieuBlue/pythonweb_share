@@ -110,16 +110,6 @@ DATABASES = {
         'PORT': config('DB_PORT'),
     }
 }
-#DATABASES = {
-    ##'default': {
-        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        #'NAME': 'HELLO_DJANGO',
-        #'USER': 'U_HELLO',
-        #'PASSWORD': 'hA8(scA@!fg3*sc&xaGh&6%-l<._&xCf',
-        #'HOST': '127.0.0.1',
-        #'PORT': '',
-    #}
-#}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
