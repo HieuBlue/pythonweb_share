@@ -27,17 +27,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #SECRET_KEY = 'w1(gap#+c=pucrjtd5iykwk-d7-b3@8dfdwscbl@6j0$a5y6w9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+DEBUG = False
 SECRET_KEY = config('SECRET_KEY')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
-DEBUG = config('DEBUG', cast=bool)
+#DEBUG = config('DEBUG', cast=bool)
+ALLOWED_HOSTS = [*]
 #ALLOWED_HOSTS = [
 #    '127.0.0.1',
 #    'localhost',
 #    'https://project-science-iot.herokuapp.com/',
 #]
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
+#ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
 
 # Application definition
 
