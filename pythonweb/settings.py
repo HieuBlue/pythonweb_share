@@ -11,6 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'firstapps/static/bower_components')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'firstapps/static'),
 )
@@ -20,8 +21,46 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     #'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'djangobower.finders.BowerFinder',
 )
+BOWER_INSTALLED_APPS = (
+    'jquery#1.9',
+    'underscore',
+    'bootstrap',
+    'bootstrap-colorpicker',
+    'bootstrap-datepicker',
+    'bootstrap-daterangepicker',
+    'bootstrap-slider',
+    'bootstrap-timepicker',
+    'ckeditor',
+    'chart.js',
+    'datatables.net',
+    'datatables.net-bs',
+    'eve-raphael',
+    'fastclick',
+    'Flot',
+    'font-awesome',
+    'fullcalendar',
+    'inputmask',
+    'ion.rangeSlider',
+    'Ionicons',
+    'jquery',
+    'jquery-knob',
+    'jquery-slimscroll',
+    'jquery-sparkline',
+    'jquery-ui',
+    'jvectormap',
+    'mocha',
+    'moment',
+    'morris.js',
+    'PACE',
+    'raphael',
+    'select2',
 
+
+
+
+)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'w1(gap#+c=pucrjtd5iykwk-d7-b3@8dfdwscbl@6j0$a5y6w9'
@@ -54,6 +93,7 @@ INSTALLED_APPS = [
     'firstapps',
     'LTE',
     'saveDB',
+    'djangobower',
 ]
 
 MIDDLEWARE = [
