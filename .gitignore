@@ -91,7 +91,7 @@ env/
 venv/
 ENV/
 *.pyc
-staticfiles
+#staticfiles
 db.sqlite3
 
 # Spyder project settings
