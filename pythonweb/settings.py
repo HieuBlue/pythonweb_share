@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
-BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'firstapps/static/bower_components')
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'firstapps/static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'firstapps/static'),
 )
@@ -38,12 +38,11 @@ BOWER_INSTALLED_APPS = (
     'datatables.net-bs',
     'eve-raphael',
     'fastclick',
-    'Flot',
     'font-awesome',
     'fullcalendar',
     'inputmask',
     'ion.rangeSlider',
-    'Ionicons',
+    #'Ionicons',
     'jquery',
     'jquery-knob',
     'jquery-slimscroll',
@@ -53,9 +52,10 @@ BOWER_INSTALLED_APPS = (
     'mocha',
     'moment',
     'morris.js',
-    'PACE',
+    #'PACE',
     'raphael',
     'select2',
+    #'Flot',
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
