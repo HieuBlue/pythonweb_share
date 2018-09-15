@@ -56,10 +56,6 @@ BOWER_INSTALLED_APPS = (
     'PACE',
     'raphael',
     'select2',
-
-
-
-
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
