@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5eaedb5d7a86b91dcfa815ccf999b338342c0f40f200177bec6db3e463fb0698"
+            "sha256": "423ed695c26ad4b62c566e64a6fba65017a119e7c1996a786a783f26c11cd965"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -80,13 +80,6 @@
             ],
             "index": "pypi",
             "version": "==0.5.0"
-        },
-        "dj-static": {
-            "hashes": [
-                "sha256:032ec1c532617922e6e3e956d504a6fb1acce4fc1c7c94612d0fda21828ce8ef"
-            ],
-            "index": "pypi",
-            "version": "==0.0.6"
         },
         "django": {
             "hashes": [
@@ -231,13 +224,6 @@
             ],
             "index": "pypi",
             "version": "==0.6.1"
-        },
-        "paho-mqtt": {
-            "hashes": [
-                "sha256:31911f6031de306c27ed79dc77b690d7c55b0dcb0f0434ca34ec6361d0371122"
-            ],
-            "index": "pypi",
-            "version": "==1.3.1"
         },
         "pathlib": {
             "hashes": [
@@ -435,13 +421,6 @@
             ],
             "index": "pypi",
             "version": "==1.11.0"
-        },
-        "static3": {
-            "hashes": [
-                "sha256:674641c64bc75507af2eb20bef7e7e3593dca993dec6674be108fa15b42f47c8"
-            ],
-            "index": "pypi",
-            "version": "==0.7.0"
         },
         "tqdm": {
             "hashes": [
