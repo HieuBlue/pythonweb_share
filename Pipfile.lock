@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "423ed695c26ad4b62c566e64a6fba65017a119e7c1996a786a783f26c11cd965"
+            "sha256": "537c0f9d21536ba1251b37695c7b6e06f9ba5599652660e31a523f2927f2ba00"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -81,13 +81,20 @@
             "index": "pypi",
             "version": "==0.5.0"
         },
-        "django": {
+        "dj-static": {
             "hashes": [
-                "sha256:97886b8a13bbc33bfeba2ff133035d3eca014e2309dff2b6da0bdfc0b8656613",
-                "sha256:e900b73beee8977c7b887d90c6c57d68af10066b9dac898e1eaf0f82313de334"
+                "sha256:032ec1c532617922e6e3e956d504a6fb1acce4fc1c7c94612d0fda21828ce8ef"
             ],
             "index": "pypi",
-            "version": "==2.0.7"
+            "version": "==0.0.6"
+        },
+        "django": {
+            "hashes": [
+                "sha256:acdcc1f61fdb0a0c82a1d3bf1879a414e7732ea894a7632af7f6d66ec7ab5bb3",
+                "sha256:efbcad7ebb47daafbcead109b38a5bd519a3c3cd92c6ed0f691ff97fcdd16b45"
+            ],
+            "index": "pypi",
+            "version": "==2.1.2"
         },
         "django-bower": {
             "hashes": [
@@ -224,6 +231,13 @@
             ],
             "index": "pypi",
             "version": "==0.6.1"
+        },
+        "paho-mqtt": {
+            "hashes": [
+                "sha256:31911f6031de306c27ed79dc77b690d7c55b0dcb0f0434ca34ec6361d0371122"
+            ],
+            "index": "pypi",
+            "version": "==1.3.1"
         },
         "pathlib": {
             "hashes": [
@@ -421,6 +435,13 @@
             ],
             "index": "pypi",
             "version": "==1.11.0"
+        },
+        "static3": {
+            "hashes": [
+                "sha256:674641c64bc75507af2eb20bef7e7e3593dca993dec6674be108fa15b42f47c8"
+            ],
+            "index": "pypi",
+            "version": "==0.7.0"
         },
         "tqdm": {
             "hashes": [
