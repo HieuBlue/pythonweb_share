@@ -1,4 +1,0 @@
-import os
-from unipath import path
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

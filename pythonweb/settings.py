@@ -21,41 +21,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     #'django.contrib.staticfiles.finders.DefaultStorageFinder',
-    'djangobower.finders.BowerFinder',
-)
-BOWER_INSTALLED_APPS = (
-    'jquery#1.9',
-    'underscore',
-    'bootstrap',
-    'bootstrap-colorpicker',
-    'bootstrap-datepicker',
-    'bootstrap-daterangepicker',
-    'bootstrap-slider',
-    'bootstrap-timepicker',
-    'ckeditor',
-    'chart.js',
-    'datatables.net',
-    'datatables.net-bs',
-    'eve-raphael',
-    'fastclick',
-    'font-awesome',
-    'fullcalendar',
-    'inputmask',
-    'ion.rangeSlider',
-    #'Ionicons',
-    'jquery',
-    'jquery-knob',
-    'jquery-slimscroll',
-    'jquery-sparkline',
-    'jquery-ui',
-    'jvectormap',
-    'mocha',
-    'moment',
-    'morris.js',
-    #'PACE',
-    'raphael',
-    'select2',
-    #'Flot',
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -89,7 +54,6 @@ INSTALLED_APPS = [
     'firstapps',
     'LTE',
     'saveDB',
-    'djangobower',
 ]
 
 MIDDLEWARE = [
