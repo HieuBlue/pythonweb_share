@@ -1,15 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Humidity(models.Model):
-	title = models.CharField(max_length=100)
-	body = models.TextField()
-	date = models.DateTimeField(auto_now_add=True)
-class Temperature(models.Model):
-	title = models.CharField(max_length=100)
-	body = models.TextField()
-	date = models.DateTimeField(auto_now_add=True)
-class Time(models.Model):
+class Time_Hum_Tem(models.Model):
 	title = models.CharField(max_length=100)
 	body = models.TextField()
 	date = models.DateTimeField(auto_now_add=True)

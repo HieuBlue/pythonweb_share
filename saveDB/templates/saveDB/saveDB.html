@@ -2,10 +2,7 @@
 {% block title %}Data-updating{% endblock %}
 {% block content %}
 	<h2><small>Temperature and Humidity is updating:</small></h2>
-	{% for post in Humidity %}
-	<h4><small>** {{time.date}} <a href="/saveDB/{{time.id}}"> - {{time.title}} - {{time.body}}</a></small></h4> <!{{time.date|date:"d-m-Y"}}>	
-	<h4><small>** {{humidity.date}} <a href="/saveDB/{{humidity.id}}"> - {{humidity.title}} - {{humidity.body}}</a></small></h4> <!{{humidity.date|date:"d-m-Y"}}>
-	<h4><small>** {{temperature.date}} <a href="/saveDB/{{temperature.id}}"> - {{temperature.title}} - {{temperature.body}}</a></small></h4> <!{{temperature.date|date:"d-m-Y"}}>
-
+	{% for post in Time_Hum_Tem %}
+	<h4><small>** {{Time_Hum_Tem.date}} <a href="/saveDB/{{Time_Hum_Tem.id}}"> - {{Time_Hum_Tem.title}} - {{Time_Hum_Tem.body}}</a></small></h4> <!{{time.date|date:"d-m-Y"}}>	
 	{% endfor %}
 {% endblock %}
