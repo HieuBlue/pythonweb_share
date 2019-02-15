@@ -4,5 +4,5 @@ from .models import Time_Hum_Tem
 class PostAdmin(admin.ModelAdmin):
 	list_display = ['topic', 'message', 'date']
 	list_filter = ['date']
-	search_fields = ['topic']
+	search_fields = ['date']
 admin.site.register((Time_Hum_Tem), PostAdmin)

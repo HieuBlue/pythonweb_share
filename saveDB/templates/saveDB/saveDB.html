@@ -2,7 +2,7 @@
 {% block title %}Data-updating{% endblock %}
 {% block content %}
 	<h2><small>Temperature and Humidity is updating:</small></h2>
-	{% for post in Time_Hum_Tem %}
+	{% for Time_Hum_Tem in TimeHumTem %}
 	<h4><small>** {{Time_Hum_Tem.date}} <a href="/saveDB/{{Time_Hum_Tem.id}}"> - {{Time_Hum_Tem.topic}} - {{Time_Hum_Tem.message}}</a></small></h4> <!{{time.date|date:"d-m-Y"}}>	
 	{% endfor %}
 {% endblock %}
