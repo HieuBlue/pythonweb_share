@@ -46,7 +46,6 @@ ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
-    'channels',
     'livesync',
     'django.contrib.admin',
     'django.contrib.auth',

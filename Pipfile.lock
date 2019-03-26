@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e7dc10737c90522904b0851c4f55b7c6e6c22a991320eb6f288b0d7203b45a14"
+            "sha256": "834964c78abca953fc8fd980baa697944d1ed14cc87e3306cb4ed4fb38652c80"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,13 +32,13 @@
             "index": "pypi",
             "version": "==0.26.2"
         },
-        "asgiref": {
+        "asgimqtt": {
             "hashes": [
-                "sha256:9b05dcd41a6a89ca8c6e7f7e4089c3f3e76b5af60aebb81ae6d455ad81989c97",
-                "sha256:b21dc4c43d7aba5a844f4c48b8f49d56277bc34937fd9f9cb93ec97fde7e3082"
+                "sha256:1f6d9c56882f18e23bac7369881ad3dbcb5d7064e04a2868022dc4cfae4b8cfc",
+                "sha256:8be9ee5e422b74e9842747ba0944c18ae8ff4cb9586c78bbc45b3c54baf1b0e7"
             ],
             "index": "pypi",
-            "version": "==2.3.2"
+            "version": "==0.2.0"
         },
         "astroid": {
             "hashes": [
@@ -122,14 +122,6 @@
             ],
             "index": "pypi",
             "version": "==2018.4.16"
-        },
-        "channels": {
-            "hashes": [
-                "sha256:5e91da393337c053028b210ea9280ef71589c6dfce5477577b57c9c0438f3f06",
-                "sha256:e13ba874d854ac493ece329dcd9947e82357c15437ac1a90ed1040d0e5b87aad"
-            ],
-            "index": "pypi",
-            "version": "==2.1.7"
         },
         "chardet": {
             "hashes": [
@@ -737,6 +729,14 @@
             ],
             "index": "pypi",
             "version": "==1.8"
+        },
+        "sqlparse": {
+            "hashes": [
+                "sha256:40afe6b8d4b1117e7dff5504d7a8ce07d9a1b15aeeade8a2d10f130a834f8177",
+                "sha256:7c3dca29c022744e95b547e867cee89f4fce4373f3549ccd8797d8eb52cdb873"
+            ],
+            "index": "pypi",
+            "version": "==0.3.0"
         },
         "static3": {
             "hashes": [
