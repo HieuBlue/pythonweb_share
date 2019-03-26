@@ -46,33 +46,34 @@ ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
+    'channels',
+    'livesync',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'AppDirectoriesFinder',
     'firstapps',
     'LTE',
     'saveDB',
 ]
-
+DJANGO_LIVESYNC = {
+'PORT': 8000 # this is optional and is default set to 9001.
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',#enable whitenoise
+    'livesync.core.middleware.DjangoLiveSyncMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
-]
-
-
+    ]
+WSGI_APPLICATION = 'pythonweb.wsgi.application'
 ROOT_URLCONF = 'pythonweb.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -89,7 +90,6 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pythonweb.wsgi.application'
 
 
 # Database
