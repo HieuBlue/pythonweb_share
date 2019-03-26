@@ -37,7 +37,8 @@
 				</div>	
 			</div>
 			<div class="col-sm-10">
-				<script>
+				<div class="container-fluid">
+					<script>
 					url: '/my_ajax_request/',
 					data: {
 					'message': 'I want an AJAX response'
@@ -50,8 +51,7 @@
 					} else {
 					console.log("You didn't message : I want an AJAX response");
 					}};
-				</script>
-				<div class="container-fluid">
+					</script>
 					{% block content %}
 					{% endblock %}	
 				</div>
