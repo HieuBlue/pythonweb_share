@@ -18,7 +18,7 @@ cycler==0.10.0
 daphne==2.2.5
 dj-database-url==0.5.0
 dj-static==0.0.6
-Django==2.1.2
+Django==2.1.7
 django-bower==5.2.0
 django-fresh==1.0.5
 django-heroku==0.3.1
@@ -49,8 +49,8 @@ pipenv==2018.11.26
 pipreqs==0.4.9
 pkginfo==1.4.2
 postgres==2.2.2
-psycopg2==2.7.5
-psycopg2-binary==2.7.5
+psycopg2==2.7.7
+psycopg2-binary==2.7.7
 pyasn1==0.4.2
 pycparser==2.19
 pylint==2.1.1
