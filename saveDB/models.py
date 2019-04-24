@@ -1,14 +1,27 @@
 from django.db import models
+import paho.mqtt.client as mqtt
 # Create your models here.
 class Time_Hum_Tem(models.Model):
-	topic = models.CharField(max_length=100)
-	message = models.CharField(max_length=500)
+	DATA_MQTT = models.CharField(max_length=200)
 	date = models.DateTimeField(auto_now_add=True)
 	def __str__(self):
-		return self.topic		
+		return self.DATA_MQTT
+
+MQTT_SERVER = "192.168.1.197" #IP broker 
+MQTT_PATH = "Temp-Hum-Time"
+def on_connect1(client, userdata, flags, rc):
+	print("connected with code "+str(rc))
+	client.subscribe(MQTT_PATH)
+	
+def on_message1(client, userdata, msg):
+    print(MQTT_PATH+" "+str(msg.payload))       
 def store_data():
 	store = Time_Hum_Tem()
-	store.topic = 'Thời Gian-Độ Ẩm-Nhiệt Độ'
-	store.message = '16:37/15/02/19-50-27'
+	store.DATA_MQTT = "ksdjhfkj"
 	store.save()
 store_data()
+client = mqtt.Client() 
+client.on_connect = on_connect1
+client.on_message = on_message1
+client.connect(MQTT_SERVER,1883,60)	
+#client.loop_forever()	
