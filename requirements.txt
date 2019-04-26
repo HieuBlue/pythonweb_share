@@ -49,8 +49,8 @@ pipenv==2018.11.26
 pipreqs==0.4.9
 pkginfo==1.4.2
 postgres==2.2.2
-psycopg2==2.7.7
-psycopg2-binary==2.7.7
+psycopg2==2.8.2
+psycopg2-binary==2.8.2
 pyasn1==0.4.2
 pycparser==2.19
 pylint==2.1.1
