@@ -8,4 +8,3 @@ def store_data(msg_payload):
 	store = Time_Hum_Tem()
 	store.DATA_MQTT = msg_payload
 	store.save()
-#v
