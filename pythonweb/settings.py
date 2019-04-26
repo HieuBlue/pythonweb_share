@@ -8,38 +8,24 @@ import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'firstapps/static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'firstapps/static'),
 )
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    #'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-# SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'w1(gap#+c=pucrjtd5iykwk-d7-b3@8dfdwscbl@6j0$a5y6w9'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
 SECRET_KEY = config('SECRET_KEY')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 DEBUG = config('DEBUG', cast=bool)
-#ALLOWED_HOSTS = [*]
-#ALLOWED_HOSTS = [
-#    '127.0.0.1',
-#    'localhost',
-#    'https://project-science-iot.herokuapp.com/',
-#]
 ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
 
 # Application definition
