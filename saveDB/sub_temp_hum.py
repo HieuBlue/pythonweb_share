@@ -10,7 +10,6 @@ def on_connect1(client, userdata, flags, rc):
 def on_message1(client, userdata, msg):
 	from .models import store_data
 	msg_payload =str(msg.payload)
-	#print(str(msg_payload))
 	store_data(msg_payload)
 client = mqtt.Client()
 client.on_connect = on_connect1
