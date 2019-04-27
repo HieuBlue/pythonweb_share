@@ -3,6 +3,7 @@ import paho.mqtt.client as mqtt
 MQTT_SERVER = "192.168.1.197" #IP broker 
 MQTT_PATH = "Temp-Hum-Time"
 def on_connect1(client, userdata, flags, rc):
+	print("connected with broker")
 	print("connected with code "+str(rc))
 	client.subscribe(MQTT_PATH)
 	
