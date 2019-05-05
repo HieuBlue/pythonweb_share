@@ -4,4 +4,4 @@ from django.conf.urls import url
 urlpatterns = [
 	path('', views.list),
 	path('<int:id>/', views.post),
-]
+	]

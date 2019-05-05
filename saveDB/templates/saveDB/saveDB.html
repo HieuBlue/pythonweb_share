@@ -3,6 +3,6 @@
 {% block content %}
 	<h2><small>Temperature and Humidity is updating:</small></h2>
 	{% for Time_Hum_Tem in TimeHumTem %}
-	<h4><small>** {{Time_Hum_Tem.date}} <a href="/saveDB/{{Time_Hum_Tem.id}}"> - {{Time_Hum_Tem.DATA_MQTT}} - </a></small></h4> <!{{time.date|date:"d-m-Y"}}>	
+	<h4><small>**<a href="/saveDB/{{Time_Hum_Tem.id}}">{{Time_Hum_Tem.DATA_MQTT}}</a></small></h4> 
 	{% endfor %}
 {% endblock %}
