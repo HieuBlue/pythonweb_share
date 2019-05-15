@@ -4,7 +4,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def index(request):
-	#return render(request,'pages/home.html')
 	return render(request,'pages/home.html')
-#def blogsaveDB(request):
-	#return render(request,'pages/tram.html')

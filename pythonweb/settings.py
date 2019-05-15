@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'include_by_ajax',
     'firstapps',
     'LTE',
     'saveDB',

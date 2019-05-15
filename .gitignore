@@ -84,13 +84,6 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-*.pyc
 staticfiles
 db.sqlite3
 
