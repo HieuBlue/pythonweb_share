@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'include_by_ajax',
     'firstapps',
+    'Realtime',
     'LTE',
     'saveDB',
 ]

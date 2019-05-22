@@ -20,6 +20,7 @@ from django.urls import path ,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('firstapps.urls')), # dau '' de trong thi se chay ham nay dau tien
+    path('Realtime/', include('Realtime.urls')),
     path('saveDB/', include('saveDB.urls')),
     path('LTE/', include('LTE.urls')),
 ]
