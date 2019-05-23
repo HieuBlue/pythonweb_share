@@ -11,4 +11,4 @@ def list(request):
 def post(request, id):
 	post = Time_Hum_Tem.objects.get(id=id)
 
-client.loop_start()#set at views only save() 1 time
+#client.loop_start()#set at views only save() 1 time
