@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Time_Hum_Tem
-#from .sub_temp_hum import *
-#import paho.mqtt.client as mqtt
+from .sub_temp_hum import *
+import paho.mqtt.client as mqtt
 #from saveDB.sub_temp_hum import *
 
 
@@ -11,4 +11,4 @@ def list(request):
 def post(request, id):
 	post = Time_Hum_Tem.objects.get(id=id)
 
-#client.loop_start()#set at views only save() 1 time
+client.loop_start()#set at views only save() 1 time
