@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Time_Hum_Tem
-from .sub_temp_hum import *
-import paho.mqtt.client as mqtt
+#from .sub_temp_hum import *
+#import paho.mqtt.client as mqtt
 #from saveDB.sub_temp_hum import *
 
 
