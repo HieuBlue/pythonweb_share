@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('firstapps.urls')), # dau '' de trong thi se chay ham nay dau tien
     path('Realtime/', include('Realtime.urls')),
-    path('saveDB/', include('saveDB.urls')),
+    path('datamqttnode1/', include('datamqttnode1.urls')),
     path('LTE/', include('LTE.urls')),
+    path('datamqttnode2/', include('datamqttnode2.urls')),
 ]

@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'firstapps',
     'Realtime',
     'LTE',
-    'saveDB',
+    'datamqttnode1',
+    'datamqttnode2',
 ]
 DJANGO_LIVESYNC = {
 'PORT': 8000 # this is optional and is default set to 9001.

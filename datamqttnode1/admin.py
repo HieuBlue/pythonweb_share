@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Time_Hum_Tem
+from .models import Node1
 # Register your models here.
 class PostAdmin(admin.ModelAdmin):
-	list_display = ['DATA_MQTT', 'date']
+	list_display = ['DATA_MQTT_Node1', 'date']
 	list_filter = ['date']
 	search_fields = ['date']
-admin.site.register((Time_Hum_Tem), PostAdmin)
+admin.site.register((Node1), PostAdmin)

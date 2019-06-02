@@ -1,0 +1,7 @@
+{% extends "getdata.html" %}
+{% block content %}
+	<h2><small></small></h2>
+	{% for Node2 in TimeHumTem %}
+	<h4><small>*Node2* <a href="/datamqttnode2/{{Node2.id}}">{{Node2.DATA_MQTT_Node2}}</a></small></h4> 
+	{% endfor %}
+{% endblock %}

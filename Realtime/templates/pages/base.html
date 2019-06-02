@@ -7,9 +7,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
     <script>
  		$(document).ready(function() {
- 	 		$("#realtimessages").load('/saveDB');
+ 	 		$("#realtimenode1").load('/datamqttnode1');
    				var refreshId = setInterval(function() {
-      				$("#realtimessages").load('/saveDB');
+      				$("#realtimenode1").load('/datamqttnode1');
+   			}, 200);
+  			$.ajaxSetup({ cache: false });
+		});
+	</script>
+    <script>
+ 		$(document).ready(function() {
+ 	 		$("#realtimenode2").load('/datamqttnode2');
+   				var refreshId = setInterval(function() {
+      				$("#realtimenode2").load('/datamqttnode2');
    			}, 200);
   			$.ajaxSetup({ cache: false });
 		});
@@ -45,8 +54,11 @@
 			</div>
 			<div class="col-sm-10">
 				<div class="container-fluid">
-  					<div id="realtimessages"> 
+  					<div id="realtimenode1"> 
   					</div>
+  					<div id="realtimenode2"> 
+  					</div>
+  					
 				</div>
 			</div>
 		</div>
@@ -54,7 +66,6 @@
 	<footer class="main-footer">
 		<div class="container-fluid">
 			<a href="http://fet-hue.edu.vn/">Khoa Dien Tu-Truyen Thong</a>|<a href="http://husc.edu.vn/">Dai Hoc Khoa Hoc</a>|<a href="">DHU</a>  
-			<!in " " will be address of pages Khoa Dien Tu-Tuyen Thong >  
 		</div>
 	</footer>  	
 
