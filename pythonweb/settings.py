@@ -90,11 +90,6 @@ TEMPLATES = [
 #    }
 #}
 import dj_database_url
-#db_from_env = dj_database_url.config()
-#DATABASES['default'].update(db_from_env)
-#DATABASES['default']['CONN_MAX_AGE'] = 600
-#DATABASES['default']['SS_REQUIRE'] = True
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
