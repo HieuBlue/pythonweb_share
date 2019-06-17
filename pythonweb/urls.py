@@ -24,4 +24,8 @@ urlpatterns = [
     path('datamqttnode1/', include('datamqttnode1.urls')),
     path('LTE/', include('LTE.urls')),
     path('datamqttnode2/', include('datamqttnode2.urls')),
+    path('turnondevicenode1/', include('turnondevicenode1.urls')),
+    path('turnoffdevicenode1/', include('turnoffdevicenode1.urls')),
+    path('turnondevicenode2/', include('turnondevicenode2.urls')),
+    path('turnoffdevicenode2/', include('turnoffdevicenode2.urls')),
 ]

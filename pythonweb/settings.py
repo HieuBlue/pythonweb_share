@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'LTE',
     'datamqttnode1',
     'datamqttnode2',
+    'turnondevicenode1',
+    'turnoffdevicenode1',
+    'turnondevicenode2',
+    'turnoffdevicenode2',
 ]
 DJANGO_LIVESYNC = {
 'PORT': 8000 # this is optional and is default set to 9001.

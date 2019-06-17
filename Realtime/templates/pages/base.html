@@ -34,7 +34,7 @@
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/Realtime">RealTime Data</a>
+            <a class="nav-link" href="/Realtime">Realtime Data</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="/LTE">Charts</a>
@@ -47,13 +47,29 @@
     </nav>
     <div class="content-data">
       <div class="container">
-        <center><h1 class="display-4">Realtime Data from Database</h1></center>
+        <center><h1 class="display-4">Realtime Data From Database</h1></center>
         <div class="col-sm-12">
           <div class="container-fluid">
             <div id="realtimenode1"> 
             </div>
+            <div class="row">          
+              <div class="col-sm-2">
+                <button onclick="window.location.href = '/turnondevicenode1';">Turn on device 1</button>
+              </div>
+              <div class="col-sm-2">
+                <button onclick="window.location.href = '/turnoffdevicenode1';">Turn off device 1</button>
+              </div>
+            </div>
             <div id="realtimenode2"> 
             </div> 
+            <div class="row">          
+              <div class="col-sm-2">
+                <button onclick="window.location.href = '/turnondevicenode2';">Turn on device 2</button>
+              </div>
+              <div class="col-sm-2">
+                <button onclick="window.location.href = '/turnoffdevicenode2';">Turn off device 2</button>
+              </div>
+            </div>  
           </div>
         </div>
       </div>  
