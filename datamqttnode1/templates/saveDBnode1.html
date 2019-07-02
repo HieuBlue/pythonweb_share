@@ -3,6 +3,6 @@
 {% block content %}
 	<h2><small>Temperature and Humidity is updating:</small></h2>
 	{% for Node1 in TimeHumTem %}
-	<h4><small>*Node1* <a href="/datamqttnode2/{{Node1.id}}">{{Node1.DATA_MQTT_Node1}}</a></small></h4> 
+	<h4><small>*Node1* <a href="/datamqttnode1/{{Node1.id}}">{{Node1.DATA_MQTT_Node1}}</a></small></h4> 
 	{% endfor %}
 {% endblock %}

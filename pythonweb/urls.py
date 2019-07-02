@@ -26,6 +26,15 @@ urlpatterns = [
     path('datamqttnode2/', include('datamqttnode2.urls')),
     path('turnondevicenode1/', include('turnondevicenode1.urls')),
     path('turnoffdevicenode1/', include('turnoffdevicenode1.urls')),
+    path('turnondevicenode1_2/', include('turnondevicenode1_2.urls')),
+    path('turnoffdevicenode1_2/', include('turnoffdevicenode1_2.urls')),
     path('turnondevicenode2/', include('turnondevicenode2.urls')),
     path('turnoffdevicenode2/', include('turnoffdevicenode2.urls')),
+    path('turnondevicenode2_2/', include('turnondevicenode2_2.urls')),
+    path('turnoffdevicenode2_2/', include('turnoffdevicenode2_2.urls')),
+    path('device_status_1/', include('device_status_1.urls')),
+    path('device_status_2/', include('device_status_2.urls')),
+    path('device_status_3/', include('device_status_3.urls')),
+    path('device_status_4/', include('device_status_4.urls')),
+    
 ]

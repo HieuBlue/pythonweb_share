@@ -47,8 +47,16 @@ INSTALLED_APPS = [
     'datamqttnode2',
     'turnondevicenode1',
     'turnoffdevicenode1',
+    'turnondevicenode1_2',
+    'turnoffdevicenode1_2',
     'turnondevicenode2',
     'turnoffdevicenode2',
+    'turnondevicenode2_2',
+    'turnoffdevicenode2_2',
+    'device_status_1',
+    'device_status_2',
+    'device_status_3',
+    'device_status_4',
 ]
 DJANGO_LIVESYNC = {
 'PORT': 8000 # this is optional and is default set to 9001.

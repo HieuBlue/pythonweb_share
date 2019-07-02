@@ -1,0 +1,7 @@
+{% extends "getdata.html" %}
+{% block content %}
+	<h2><small></small></h2>
+	{% for DeviceNode1status in Status %}
+	<h4><small>Status:  <a href="/device_status_1/{{DeviceNode1status.id}}">{{DeviceNode1status.Device_Node1_Status}}</a></small></h4> 
+	{% endfor %}
+{% endblock %}
