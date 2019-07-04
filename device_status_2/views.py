@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 
 def list(request):
 	Data  = {'Status': Device2Node1status.objects.all().order_by("-date")[0:1]}
-	return render(request, 'saveDBdevicenode1.html', Data)
+	return render(request, 'saveDBdevice2node1.html', Data)
 def post(request, id):
 	post = Device2Node1status.objects.get(id=id)
 
