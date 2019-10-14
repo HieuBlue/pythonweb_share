@@ -2,7 +2,7 @@
 import paho.mqtt.client as mqtt
 #MQTT_SERVER = "192.168.1.197" #IP broker 
 MQTT_SERVER = "broker.hivemq.com"
-MQTT_PATH = "Device_3_Status"
+MQTT_PATH = "Device_3_Status_14351997"
 def on_connect1(client, userdata, flags, rc):
 	print("connected with broker")
 	print("connected with code "+str(rc))

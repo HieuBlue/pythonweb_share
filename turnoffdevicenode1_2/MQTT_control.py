@@ -5,7 +5,7 @@ from time import sleep
 
 client = mqtt.Client()
 MQTT_SERVER = "broker.hivemq.com" 
-MQTT_TOPIC = "ClientSendControlNode1"
+MQTT_TOPIC = "ClientSendControlNode1_14351997"
 
 
 		
